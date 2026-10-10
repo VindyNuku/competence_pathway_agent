@@ -57,7 +57,7 @@ def show_progress(current_skills):
         </h3>
 
         <p style="color:#243B53;">
-            <strong>{covered} of {total} competencies selected — {percentage}%</strong>
+            <strong>{covered} of {total} competencies selected - {percentage}%</strong>
         </p>
 
         <div style="background:#E2F0FC; border-radius:12px;
@@ -149,6 +149,24 @@ with gr.Blocks(
 
     summary = gr.Markdown(label="Competence analysis")
     advice = gr.Markdown(label="AI learning pathway")
+
+    gr.Markdown("### Was this learning pathway helpful?")
+
+    with gr.Row():
+        helpful_button = gr.Button("👍 Helpful")
+        not_helpful_button = gr.Button("👎 Not Helpful")
+
+    feedback_message = gr.Markdown()
+
+    helpful_button.click(
+        fn=lambda: "Thank you! Your positive feedback has been noted.",
+        outputs=feedback_message
+    )
+
+    not_helpful_button.click(
+        fn=lambda: "Thank you! Your feedback will help us improve future recommendations.",
+        outputs=feedback_message
+    )
 
     analyse_button.click(
         fn=analyse_skills,
