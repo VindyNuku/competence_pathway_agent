@@ -126,7 +126,13 @@ It demonstrates how AI-supported competence analysis, explainable recommendation
 
 ## Future Development
 
-Potential improvements include integrating real learning resources, supporting additional career profiles, recording learner feedback, and evaluating recommendation quality, transparency, and learner experience.
+Potential improvements include:
+
+- Integrating real learning resources and supporting additional career profiles.
+- Introducing **multilingual support** to make learning pathways accessible to learners from different linguistic backgrounds.
+- Exploring **multiple language models** to compare recommendation quality, reliability, and explainability.
+- Recording learner feedback to support continuous improvement.
+- Evaluating recommendation quality, transparency, and learner experience through user studies.
 
 ## Project Status
 
