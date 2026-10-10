@@ -16,7 +16,7 @@ A locally running AI model then generates personalised learning advice.
 
 - **Competency gap analysis:** Identifies missing skills based on the selected career profile.
 - **AI-generated recommendations:** Explains why missing competencies matter and suggests learning resources.
-- **Adaptive learning pathways:** Updates recommendations when learners complete competencies.
+- **Adaptive learning pathways:** Automatically recalculates competency gaps and generates updated recommendations when learners mark a competency as completed.
 - **Competency coverage indicator:** Displays progress against the example career profile.
 - **Explainable recommendations:** Provides reasons for each suggested learning step.
 - **Learner feedback:** Allows users to indicate whether a recommendation was helpful.
@@ -51,7 +51,7 @@ conda activate competence-agent
 ### 3. Install dependencies
 
 ```bash
-pip install gradio==6.26.0 ollama
+python -m pip install -r requirements.txt
 ```
 
 ### 4. Install and configure Ollama
@@ -95,10 +95,17 @@ competence_pathway_agent/
 ├── explanations.py
 ├── learner_progress.py
 ├── learning_resources.py
+├── requirements.txt
 ├── Screenshots/
 ├── .gitignore
 └── README.md
 ```
+
+## Application Screenshots
+
+The screenshots below demonstrate the prototype's user interface, competency gap analysis, personalised learning recommendations, and learner progress tracking.
+
+Screenshots are available in the [Screenshots](Screenshots/) folder.
 
 ## Research Context
 
